@@ -32,7 +32,6 @@ app/
   css/styles.css       Tüm stiller
   js/data.js           21 konu başlığı ve 145 sorunun verisi (orijinal Excel'den çıkarıldı)
   js/app.js            Uygulama mantığı (durum yönetimi, hesaplamalar, render, dışa aktarma)
-  js/vendor/xlsx.full.min.js   Excel dışa aktarma için SheetJS kütüphanesi (yerelde barındırılıyor)
 ```
 
-Veriler tarayıcının `localStorage`'ında saklanır; sunucu tarafında herhangi bir veritabanı yoktur.
+Veriler tarayıcının `localStorage`'ında saklanır; sunucu tarafında herhangi bir veritabanı yoktur. Excel dışa aktarma özelliği, CDN üzerinden yüklenen [SheetJS](https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js) kütüphanesini kullanır; bu nedenle dışa aktarma için internet bağlantısı gerekir.
